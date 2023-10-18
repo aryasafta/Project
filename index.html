@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RyaaStore    |   Ecommerce Website</title>
+        <link rel="stylesheet" href="latihan1.css">
+    </head> 
+    <body>
+        <!-- navbar -->
+        <nav class="navbar">
+            <h1 class="logo"><img src="RyaaaStore.edit-removebg-preview.png"></h1>
+            <ul class="nav-links">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="ctn"><a href="#">Contanct</a></li>
+            </ul>
+            <img src="titik_3-removebg-preview.png" class="menu-btn">
+        </nav>
+
+        <header>
+            <div class="header-content" id="header-content" style="position: relative;">
+                <h2>Explore The For Items</h2>
+                <div class="line"></div>
+                <h1>Sport Shoes</h1>
+                <a href="#" class="ctn" id="btnMenu">Menu</a>
+                
+                <div id="menuContent" style="position: absolute; top: 92%; left: 50%; transform: translateX(-50%); background-color: saddlebrown; padding: 12px; border-radius: 10px; display: none; flex-direction: column; text-align: left; gap: 12px;">
+                    <a href="#ortusheight" style=" color: black;">Ortusheight</a>
+                    <a href="#adidas" style=" color: black;">Adidas</a>
+                    <a href="#nike" style=" color: black;">Nike</a>
+                </div>
+            </div>
+        </header>
+           
+
+        <!-- == Items == -->
+        <section id="ortusheight" class="Items"> 
+            <div class="title">
+                <h1> New Ortusheight</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="catalys-removebg-preview (2).png">
+                    <h4>Ortusheight Catallyts</h4>
+                    <p>Catallyst Riden IN - <br> White Gold Silver</p>
+                    <p>11020411</p>
+                    <a href="#" class="price">Rp.750.000</a>
+                    <a href="#" class="ctn">Buy In</a>
+                </div>
+                <div class="col">
+                    <img src="ortus-removebg-preview (4).png">
+                    <h4>Ortusheight Legion</h4>
+                    <p>Catallyst Legion V3 FG <br> Orchid Fluo Green White</p>
+                    <p>11040256</p>
+                    <a href="#" class="price">Rp.650.000</a>
+                    <a href="#" class="ctn">Buy In</a>
+                </div>
+            </div>
+        </section>
+        <section id="adidas" class="Items">
+            <div class="title">
+                <h1> New Adidas</h1>    
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="Solar-Slime-Messi15_png-removebg-preview.png">
+                    <h4>Adidas</h4>
+                    <p>New Adidas Messi15 br Colorway</p>
+                    <p>1120456</p>
+                    <a href="#" class="price">Rp.1.650.000</a>
+                    <a href="#" class="ctn">Buy In</a>
+                </div>
+                <div class="col">
+                    <img src="golde_png-removebg-preview.png">
+                    <h4>Adidas Gold</h4>
+                    <p>adidas X17+ Purespeed Gold</p>
+                    <p>1120456</p>
+                    <a href="#" class="price">Rp.1.300.000</a>
+                    <a href="#" class="ctn">Buy In</a>
+                </div>
+            </div>
+        </section>
+        <section id="nike" class="Items">
+            <div class="title">
+                <h1> New Nike</h1>    
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="dc577765716080fb6f525a93d1a7aa57-removebg-preview.png">
+                    <h4>Nike Phantom Vsn</h4>
+                    <p>Nike Phantom VSN Elite DF FG Flyknit <br> White Metallic Gold Soccer </p>
+                    <p>1120456</p>
+                    <a href="#" class="price">Rp.1.650.000</a>
+                    <a href="#" class="ctn">Buy In</a>
+                </div>
+                <div class="col">
+                    <img src="SEPATU_FUTSAL_NIKE_MAGISTA_ONDA_IC_White-Green-removebg-preview.png">
+                    <h4>Nike Magista</h4>
+                    <p>Futsal Nike Magista x Finalle 2 IC</p>
+                    <p>1120456</p>
+                    <a href="#" class="price">Rp.1.300.000</a>
+                    <a href="#" class="ctn">Buy In</a>
+                </div>
+            </div>
+        </section>
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+
+            const btnMenu = document.querySelector("#btnMenu");
+            const menuContent = document.getElementById("menuContent");
+            const header = document.querySelector("#header-content");
+
+            btnMenu.addEventListener("mouseover", () => {
+                menuContent.style.display = "flex"
+            })
+            header.addEventListener("mouseleave", () => {
+                menuContent.style.display = "none"
+            })
+        </script>
+    </body>  
+</html>
