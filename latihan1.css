@@ -39,14 +39,19 @@ body , html{
 
 /* navbar */
 .navbar{
-    position: absolute;
-    top: 0%;
-    left: 0%;
+    position: fixed;
+    top: 0; 
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 20px;
-    color:blanchedalmond
+    padding: 12px 20px;
+    color:blanchedalmond;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+.logo img{
+    width: 200px;
 }
 
 .nav-links{
@@ -144,6 +149,11 @@ section{
 
 .row .col img {
     width: 300px;
+    transform: scale(1);
+    transition: .3s;
+}
+.row .col:hover img {
+    transform: scale(.8);
 }
 h4{
     font-size: 3vmin;
@@ -203,6 +213,21 @@ p{
     background-repeat: no-repeat;
 }
 
+.footer{
+    width: 100%;
+    height: 200px;
+    padding: 20px 80px;
+    margin: 0;
+    text-align: center;
+    background: silver;
+}
+
+.socmed {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
 
 
 
